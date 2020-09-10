@@ -1,28 +1,30 @@
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     padding:0;
     margin:0;
 }
-
 h1 {
     font-size: 32px;
 }
-
-.header { 
+.header {
     display: flex;
     flex-direction: column;
     align-content: flex-end;
     background-color: #F2F2F2;
-    padding: 10px
+    padding: 10px;
 }
-.footer {
+.main {
     display: flex;
     flex-direction: column;
-    padding: 10px
-
+    padding: 10px;
+    margin-bottom: 200px;
 }
-
+.left {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+}
 .orange {
     color: #ff5c0f;
 }
@@ -48,7 +50,7 @@ li {
 li.hover {
     color: #ff5c0f;
 }
-button {
+.btnstyle {
     color: #ffffff;
     width: 100%;
     height: auto;
@@ -56,19 +58,19 @@ button {
     border: none;
     border-radius: 10px;
     background-color: #20a8b4;
+    font-size: 14px;
 }
-button:hover {
+.btnstyle:hover {
     background-color: #ff5c0f;
     cursor: pointer;
 }
 img {
     display: none;
 }
-
+.doyouthink {
+    font-size: 20px;
+}
 @media (min-width: 768px){
-    button {
-      width: fit-content;
-    }
     .learn {
         margin-right: auto;
     }
@@ -77,28 +79,33 @@ img {
         flex-direction: row;
         align-items: center;
         justify-content: flex-end;
-    }
-    
-    .footer{
-        max-width: 50%;
-        height: 400px;
-        justify-content: center;
-        margin-top: 100px;
-        margin-bottom: 200px;
-        }
-    
-    img {
-        display: inline-flex;
-        max-width: 50%;
-        position: absolute;
-        right: 15px;
-    }
-    
+        padding: 0px 10px;
+    }  
     ul {
         align-self: center;
     }
     li {
         display: inline-flex;
+    }
+    .main{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        }
 
+    .left {
+        display: flex;
+        align-self: center;
+        flex-direction: column;
+    }
+    .btnstyle {
+        width: max-content;
+    }
+    img {
+        display: inline-flex;
+        max-width: 50%;
+    }
+    .doyouthink {
+        font-size: 28px;
     }
 }
